@@ -11,6 +11,7 @@ In reinforcement learning, instead, we are interested in a long term strategy fo
 We will now take a look at the main concepts and terminology of Reinforcement Learning.
 
   - Agent
+
     A system that is embedded in an environment, and takes actions to change the state of the environment. Examples include mobile robots, software agents, or industrial controllers.
 
   - Environment
