@@ -64,7 +64,15 @@ Action-Value Methods
 
 If we collect enough observations, our estimate gets close enough to the real function. We can then act greedily at each timestep, i.e. select the action with the highest value, to collect the highest possible rewards.
 
+### Don't be too Greedy
 
+Remember when we talked about the trade-off between exploration and exploitation? This is one example of why we should care about it.
+
+As a matter of fact, if we always act greedily as proposed in the previous paragraph, we never try out sub-optimal actions which might actually eventually lead to better results.
+
+To introduce some degree of exploration in our solution, we can use an ε-greedy strategy: we select actions greedily most of the time, but every once in a while, with probability ε, we select a random action, regardless of the action values.
+
+Let's build the RF algorithm
     
     
 
